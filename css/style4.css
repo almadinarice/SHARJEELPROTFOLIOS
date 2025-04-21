@@ -1,0 +1,169 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+  }
+  
+  nav {
+    background: #1a1a1a;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar li a {
+    text-decoration: none;
+    color: #00ffcc;
+    font-weight: bold;
+  }
+  
+  .about-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+  }
+  
+  .about-text {
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: auto;
+    max-width: 600px;
+    padding-left: 30px;
+    border-left: 3px solid #00ffcc;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .timeline-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .skills-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    color: #00ffcc;
+    margin-bottom: 40px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .skill-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.6);
+  }
+  
+  .skill-card h3 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00ffcc, #0099ff);
+  }
+  
+  .flutter { width: 90%; }
+  .dart { width: 85%; }
+  .python { width: 80%; }
+  .ml { width: 75%; }
+  .firebase { width: 70%; }
+  .uiux { width: 65%; }
+  
+  .projects-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .project-card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+  }
+  
+  .project-card h3 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.5);
+  }
+  
