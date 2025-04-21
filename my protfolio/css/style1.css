@@ -1,0 +1,76 @@
+.about-section {
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+  }
+  
+  .about-text {
+    max-width: 500px;
+    text-align: left;
+    max-width: 500px;
+    text-align: center; /* for mobile */
+  }
+  
+  .timeline {
+    position: relative;
+    margin: auto;
+    max-width: 600px;
+    padding-left: 30px;
+    border-left: 3px solid #00ffcc;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    position: relative;
+    margin-bottom: 50px; /* Increase spacing */
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .timeline-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color:  #00ffcc;
+  }
+  .timeline-content {
+    background: rgba(255, 255, 255, 0.1); /* Thoda zyada visible background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    color:  #00ffcc;
+    margin-left: 10px; /* Add left spacing */
+    transition: all 0.3s ease;
+  }
+  

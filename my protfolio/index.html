@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<script>
+  function filterProjects(category) {
+    let cards = document.querySelectorAll('.project-cards .card');
+    cards.forEach(card => {
+      if (category === 'all') {
+        card.style.display = "block";
+      } else {
+        card.style.display = card.classList.contains(category) ? "block" : "none";
+      }
+    });
+  }
+</script>
+
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="neon">Sharjeel Safdar</span></h1>
+      <p class="tagline">I build <span class="typing-text"></span></p>
+      <div class="buttons">
+        <a href="contact.html" class="btn">Hire Me</a>
+        <a href="assets/resume.docx" class="btn" download>Download Resume</a>
+      </div>
+    </div>
+  </section>   
+
+  
+  <section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+  
+    <div class="filter-buttons">
+      <button onclick="filterProjects('all')">All</button>
+      <button onclick="filterProjects('web')">Web</button>
+      <button onclick="filterProjects('flutter')">Flutter</button>
+      <button onclick="filterProjects('ml')">ML</button>
+    </div>
+  
+    <div class="project-cards">
+  
+      <div class="card web">
+        <h3>Rice Mills Website</h3>
+        <p>Built using HTML, CSS, JavaScript, PHP & MySQL.</p>
+      </div>
+  
+      <div class="card ml">
+        <h3>Brain Tumor Detection</h3>
+        <p>Machine Learning with Python, NLP and Flutter UI.</p>
+      </div>
+  
+      <div class="card web">
+        <h3>Portfolio Website</h3>
+        <p>Fully responsive portfolio using modern HTML & CSS.</p>
+      </div>
+       
+      <div class="card flutter">
+        <h3>intigrate pythone with flutter </h3>
+        <p>Fully responsive different mobile appsusing modern flutter and dart .</p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+    <h2>NOTICE&MAP</h2>
+  
+    <div class="contact-container">
+  
+ 
+  
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+       
+        <p><strong>NOTICE:</strong> KINDLY GO TO THE CONTACT IN NEV BAR AND SUBMIT YOUR QUERY I WILL ANSWER IT </p>
+  
+        <iframe
+          src="https://www.google.com/maps?q=Nankana+Sahib+Punjab+Pakistan&output=embed"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+  
+    </div>
+  </section>
+  
+    
+
+  <script src="js/main.js"></script>
+</body>
+</html>
